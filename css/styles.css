@@ -1,0 +1,334 @@
+/* custom styling */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    width: 1400px;
+    max-width: 98%;
+    margin: 0 auto;
+    /* background-color: #99ee99; */
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    margin: 10px;
+    font-size: 20px;
+}
+
+i {
+    font-size: 20px
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    padding: 5px;
+}
+
+h5 {
+    font-size: 15px;
+    margin: 0;
+    padding: 10px;
+}
+
+
+/* end custom styling */
+
+
+/* header */
+
+header {
+    padding: 0;
+    margin: 10px;
+    background-color: green;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container.home i {
+    margin-left: 20px;
+}
+
+header .container {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button button {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.logo h1 {
+    margin-right: 50px;
+}
+
+.menu {
+    display: none;
+}
+
+
+/* end header */
+
+
+/* banner */
+
+.banner {
+    position: relative;
+}
+
+.banner .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-image: linear-gradient(to right, black 20%, white 70%);
+    opacity: 0.2;
+}
+
+.info h2 {
+    font-size: 40px;
+    margin: 0;
+}
+
+.info p {
+    font-size: 1.2rem;
+}
+
+.info {
+    width: 500px;
+    position: absolute;
+    top: 100px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+}
+
+.banner img {
+    width: 98vw;
+    height: 70vh;
+}
+
+
+/* end banner */
+
+
+/* quick links */
+
+.container .listings {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.listings i {
+    font-size: 50px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.listings li {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+.quick-links {
+    background-color: gray;
+}
+
+.listings li:hover {
+    color: #99ee99;
+}
+
+
+/* end quick links */
+
+
+/* segment */
+
+.cover {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    float: left;
+    margin-right: 12px;
+}
+
+.layout,
+.layout-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+}
+
+.layout li,
+.layout-1 li {
+    background-color: yellow;
+}
+
+.layout-1 li:nth-child(1) .cover {
+    background-image: url(../img/image-1.webp);
+    background-size: cover;
+}
+
+.layout-1 li:nth-child(2) .cover {
+    background-image: url(../img/image-2.webp);
+    background-size: cover;
+}
+
+.layout-1 li:nth-child(3) .cover {
+    background-image: url(../img/image-3.webp);
+    background-size: cover;
+}
+
+.layout-1 li:nth-child(4) .cover {
+    background-image: url(../img/image-4.webp);
+    background-size: cover;
+}
+
+.layout-1 li:nth-child(5) .cover {
+    background-image: url(../img/image-5.webp);
+    background-size: cover;
+}
+
+
+/* end segment */
+
+
+/* col */
+
+.col {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+
+/* end col */
+
+
+/* sub-content */
+
+.box {
+    height: 50vh;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-image: linear-gradient(to right, black 60%, white);
+    opacity: 0.3;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.wrapper .box:nth-child(1) {
+    background-image: url(../img/image-6.webp);
+    background-size: cover;
+}
+
+.wrapper .box:nth-child(2) {
+    background-image: url(../img/image-7.webp);
+    background-size: cover;
+}
+
+.box .info button {
+    background-color: transparent;
+    outline: none;
+    padding: 20px;
+    border-radius: 100px;
+    box-shadow: none;
+    cursor: pointer;
+    color: white;
+    border: 2px solid black;
+}
+
+.box .info {
+    color: white;
+    font-size: 1.2rem;
+    padding-left: 20px;
+}
+
+.box .info h4 {
+    font-weight: 700;
+}
+
+.box .info button:hover {
+    background-color: white;
+    color: black;
+}
+
+
+/* end sub-content */
+
+
+/* footer */
+
+#footer {
+    background-color: rgb(49, 49, 49);
+    padding: 20px;
+}
+
+#footer .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#footer .container a {
+    text-transform: uppercase;
+    color: white;
+    display: block;
+}
+
+#footer .container a:hover {
+    text-decoration: underline;
+}
+
+
+/* end footer */
+
+
+/* media queries */
+
+@media(max-width:980px) {
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+    .layout {
+        grid-template-columns: 1fr;
+    }
+    .home {
+        display: none;
+    }
+    .menu {
+        display: block;
+    }
+}
